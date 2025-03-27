@@ -32,7 +32,7 @@ h1 {
 }
 
 .about {
-  margin: 20px 0; // Adjusted for spacing above and below
+  margin: 20px 0;
   max-width: 600px;
   font-size: 1.1em;
   line-height: 1.5;
@@ -40,7 +40,7 @@ h1 {
 }
 
 nav {
-  margin-top: 20px; // Reduced from 40px to balance the layout
+  margin-top: 20px;
   a {
     color: $primary;
     margin: 0 20px;
@@ -181,6 +181,60 @@ a {
   &:hover {
     text-shadow: 0 0 10px $primary;
     animation: glitch 0.3s infinite;
+  }
+}
+
+.gallery {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 600px;
+    height: auto;
+    max-width: 100%;
+    border: 2px solid $primary;
+    box-shadow: 0 0 15px $primary;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px $primary;
+    }
+  }
+  .caption {
+    color: $primary;
+    text-shadow: 0 0 5px $primary;
+    font-size: 1.2em;
+    margin-top: 40px;
+    text-align: center;
+    max-width: 600px;
+  }
+}
+
+.gallery-pair {
+  display: flex;
+  flex-wrap: nowrap; // Keeps them side by side
+  gap: 20px; // Space between images
+  justify-content: center;
+  max-width: 100%; // Prevents overflow
+  img {
+    width: 300px; // Half of 600px, adjustable
+    height: auto;
+    max-width: 45%; // Ensures they fit within container
+    border: 2px solid $primary;
+    box-shadow: 0 0 15px $primary;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px $primary;
+    }
   }
 }
 

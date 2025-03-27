@@ -12,8 +12,8 @@
     <div class="spacer"></div>
     <div class="container">
         <h1>Transmission Sent</h1>
-        <p class="success">Your message has been dispatched to the grid.</p>
-        <a href="index.html">Return to Base</a>
+        <p class="success">Your message has been dispatched.</p>
+        <a href="index.php">Return to Home</a>
     </div>
     <div class="spacer"></div>
 </body>

@@ -6,10 +6,10 @@ const form = document.getElementById('contact-form');
 contactLink.addEventListener('click', function(e) {
     e.preventDefault();
     popup.classList.add('active');
-    form.reset(); // Reset form when opened
+    form.reset();
 });
 
 closeBtn.addEventListener('click', function() {
     popup.classList.remove('active');
-    form.reset(); // Reset form when closed
+    form.reset();
 });
